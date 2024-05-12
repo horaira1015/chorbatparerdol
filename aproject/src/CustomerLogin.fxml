@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="457.0" prefWidth="553.0" style="-fx-background-color: #9253A7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerLoginController">
+   <children>
+      <HBox layoutX="-6.0" layoutY="-1.0" prefHeight="457.0" prefWidth="562.0">
+         <children>
+            <VBox prefHeight="458.0" prefWidth="113.0" />
+            <VBox prefHeight="154.0" prefWidth="306.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="97.0" prefWidth="304.0" text="PLEASE ENTER USER ID AND PASSWORD" textFill="#53a1a7">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label prefHeight="18.0" prefWidth="175.0" text="USER ID:" textFill="#53a1a7">
+                     <font>
+                        <Font name="Bell MT Bold" size="24.0" />
+                     </font></Label>
+                  <Label />
+                  <TextField fx:id="username" prefHeight="34.0" prefWidth="304.0" promptText="Enter id" />
+                  <Label />
+                  <Label prefHeight="26.0" prefWidth="142.0" text="PASSWORD:" textFill="#53a1a7">
+                     <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                     </font></Label>
+                  <Label />
+                  <PasswordField fx:id="password" prefHeight="38.0" prefWidth="304.0" promptText="Password" />
+                  <Label />
+                  <Button mnemonicParsing="false" onAction="#signedInCustomer" prefHeight="26.0" prefWidth="96.0" style="-fx-background-color: #53A773;" text="SIGN IN" textFill="#cf5757">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Button>
+                  <VBox prefHeight="132.0" prefWidth="304.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="304.0" />
+                        <Label prefHeight="52.0" prefWidth="304.0" text="NEW IN CSEDU? PLEASE REGISTER">
+                           <font>
+                              <Font name="Algerian" size="17.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#registerCustomer" prefHeight="42.0" prefWidth="132.0" style="-fx-background-color: #CF5757;" text="REGISTER">
+                           <font>
+                              <Font name="Arial Black" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="458.0" prefWidth="150.0">
+               <children>
+                  <HBox prefHeight="414.0" prefWidth="148.0" />
+                  <Button mnemonicParsing="false" onAction="#back" prefHeight="46.0" prefWidth="153.0" style="-fx-background-color: #5C5CD2;" text="BACK">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
